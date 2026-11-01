@@ -47,25 +47,25 @@ THEMES = {
 LINES = [
     ("cmd", [("$ ", "prompt"), ("whoami", "cmd")]),
     ("out", [("→ ", "arrow"), ("Arthur Cavini", "key"), (" · ", "sep"),
-             ("full-stack engineer", "val"), (" · ", "sep"),
-             ("AI systems you can verify", "val")]),
-    ("blank", []),
-    ("cmd", [("$ ", "prompt"), ("cat ", "cmd"), ("stack.json", "str"),
-             (" | ", "pipe"), ("jq ", "cmd"), ("-r ", "flag"),
-             ("'.ai[]'", "str")]),
-    ("out", [("→ ", "arrow"), ("rag", "key"), (" · ", "sep"),
-             ("hybrid-retrieval", "val"), (" · ", "sep"),
-             ("llm-as-judge", "val"), (" · ", "sep"), ("evals", "val"),
-             (" · ", "sep"), ("agents", "val"), (" · ", "sep"),
-             ("mcp", "key")]),
+             ("full-stack", "val"), (" · ", "sep"),
+             ("MERN, NestJS, Next.js", "flag"), (" · ", "sep"),
+             ("Brazil", "val")]),
     ("blank", []),
     ("cmd", [("$ ", "prompt"), ("cat ", "cmd"), ("stack.json", "str"),
              (" | ", "pipe"), ("jq ", "cmd"), ("-r ", "flag"),
              ("'.core[]'", "str")]),
-    ("out", [("→ ", "arrow"), ("typescript", "key"), (" · ", "sep"),
-             ("react", "val"), (" · ", "sep"), ("next.js", "val"),
-             (" · ", "sep"), ("node", "val"), (" · ", "sep"),
-             ("nestjs", "val"), (" · ", "sep"), ("postgres", "val")]),
+    ("out", [("→ ", "arrow"), ("react", "key"), (" · ", "sep"),
+             ("node", "val"), (" · ", "sep"), ("nestjs", "val"),
+             (" · ", "sep"), ("next.js", "val"), (" · ", "sep"),
+             ("typescript", "val"), (" · ", "sep"), ("mongodb", "key")]),
+    ("blank", []),
+    ("cmd", [("$ ", "prompt"), ("cat ", "cmd"), ("stack.json", "str"),
+             (" | ", "pipe"), ("jq ", "cmd"), ("-r ", "flag"),
+             ("'.alongside[]'", "str")]),
+    ("out", [("→ ", "arrow"), ("supabase", "key"), (" · ", "sep"),
+             ("postgres", "val"), (" · ", "sep"), ("redux", "val"),
+             (" · ", "sep"), ("tailwind", "val"), (" · ", "sep"),
+             ("docker", "val"), (" · ", "sep"), ("rag", "key")]),
     ("blank", []),
     ("cmd", [("$ ", "prompt"), ("pnpm ", "cmd"), ("test:all", "flag")]),
     ("checks", [("2,282", "tests green"), ("48", "ADRs on record"),
@@ -80,11 +80,11 @@ PAUSE_AFTER_OUT = 0.36
 CHECK_STAGGER = 0.40
 TAIL = 0.5
 
-ALT = ("Terminal window. whoami returns: Arthur Cavini, full-stack engineer, "
-       "AI systems you can verify. The AI stack is rag, hybrid-retrieval, "
-       "llm-as-judge, evals, agents and mcp. The core stack is typescript, "
-       "react, next.js, node, nestjs and postgres. pnpm test:all passes with "
-       "2,282 tests green, 48 ADRs on record, spec before code.")
+ALT = ("Terminal window. whoami returns: Arthur Cavini, full-stack, MERN, "
+       "NestJS, Next.js, Brazil. The core stack is react, node, nestjs, "
+       "next.js, typescript and mongodb. Alongside those: supabase, postgres, "
+       "redux, tailwind, docker and rag. pnpm test:all passes with 2,282 "
+       "tests green, 48 ADRs on record, spec before code.")
 
 
 def esc(s):
