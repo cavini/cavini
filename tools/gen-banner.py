@@ -48,7 +48,7 @@ LINES = [
     ("cmd", [("$ ", "prompt"), ("whoami", "cmd")]),
     ("out", [("→ ", "arrow"), ("Arthur Cavini", "key"), (" · ", "sep"),
              ("full-stack dev", "val"), (" · ", "sep"),
-             ("MERN + NestJS", "flag"), (" · ", "sep"), ("Brazil", "val")]),
+             ("React, Node, NestJS", "flag")]),
     ("blank", []),
     ("cmd", [("$ ", "prompt"), ("cat ", "cmd"), ("stack.json", "str"),
              (" | ", "pipe"), ("jq ", "cmd"), ("-r ", "flag"),
@@ -56,19 +56,19 @@ LINES = [
     ("out", [("→ ", "arrow"), ("react", "key"), (" · ", "sep"),
              ("node", "val"), (" · ", "sep"), ("nestjs", "val"),
              (" · ", "sep"), ("next.js", "val"), (" · ", "sep"),
-             ("typescript", "val"), (" · ", "sep"), ("mongodb", "key")]),
+             ("typescript", "val"), (" · ", "sep"), ("postgres", "key")]),
     ("blank", []),
     ("cmd", [("$ ", "prompt"), ("cat ", "cmd"), ("stack.json", "str"),
              (" | ", "pipe"), ("jq ", "cmd"), ("-r ", "flag"),
-             ("'.also[]'", "str")]),
-    ("out", [("→ ", "arrow"), ("supabase", "key"), (" · ", "sep"),
-             ("postgres", "val"), (" · ", "sep"), ("redux", "val"),
-             (" · ", "sep"), ("tailwind", "val"), (" · ", "sep"),
-             ("docker", "val"), (" · ", "sep"), ("redis", "key")]),
+             ("'.ai[]'", "str")]),
+    ("out", [("→ ", "arrow"), ("rag", "key"), (" · ", "sep"),
+             ("llm", "val"), (" · ", "sep"), ("pgvector", "val"),
+             (" · ", "sep"), ("hybrid-search", "val"), (" · ", "sep"),
+             ("agents", "val"), (" · ", "sep"), ("whisper", "key")]),
     ("blank", []),
     ("cmd", [("$ ", "prompt"), ("pnpm ", "cmd"), ("test", "flag")]),
     ("checks", [("2,282", "tests passing"), ("6", "years shipping"),
-                ("0", "broken Fridays")]),
+                ("TDD", "+ spec-driven")]),
     ("blank", []),
     ("prompt", [("$ ", "prompt")]),
 ]
@@ -80,10 +80,10 @@ CHECK_STAGGER = 0.40
 TAIL = 0.5
 
 ALT = ("Terminal window. whoami returns: Arthur Cavini, full-stack dev, "
-       "MERN plus NestJS, Brazil. Core stack: react, node, nestjs, next.js, "
-       "typescript, mongodb. Also: supabase, postgres, redux, tailwind, "
-       "docker, redis. pnpm test passes: 2,282 tests passing, 6 years "
-       "shipping, 0 broken Fridays.")
+       "React, Node, NestJS. Core stack: react, node, nestjs, next.js, "
+       "typescript, postgres. AI: rag, llm, pgvector, hybrid-search, agents, "
+       "whisper. pnpm test passes: 2,282 tests passing, 6 years shipping, "
+       "TDD plus spec-driven.")
 
 
 def esc(s):
