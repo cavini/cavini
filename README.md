@@ -13,7 +13,7 @@
 
 ---
 
-I build **AI systems whose answers can be checked** — retrieval that cites the
+I'm **Arthur Cavini**, and I build **AI systems whose answers can be checked** — retrieval that cites the
 passage it came from, counts that come out of SQL rather than out of a model,
 and judges told to refuse when they are not sure.
 
