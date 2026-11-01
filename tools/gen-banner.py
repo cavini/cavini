@@ -47,9 +47,8 @@ THEMES = {
 LINES = [
     ("cmd", [("$ ", "prompt"), ("whoami", "cmd")]),
     ("out", [("→ ", "arrow"), ("Arthur Cavini", "key"), (" · ", "sep"),
-             ("full-stack", "val"), (" · ", "sep"),
-             ("MERN, NestJS, Next.js", "flag"), (" · ", "sep"),
-             ("Brazil", "val")]),
+             ("full-stack dev", "val"), (" · ", "sep"),
+             ("MERN + NestJS", "flag"), (" · ", "sep"), ("Brazil", "val")]),
     ("blank", []),
     ("cmd", [("$ ", "prompt"), ("cat ", "cmd"), ("stack.json", "str"),
              (" | ", "pipe"), ("jq ", "cmd"), ("-r ", "flag"),
@@ -61,15 +60,15 @@ LINES = [
     ("blank", []),
     ("cmd", [("$ ", "prompt"), ("cat ", "cmd"), ("stack.json", "str"),
              (" | ", "pipe"), ("jq ", "cmd"), ("-r ", "flag"),
-             ("'.alongside[]'", "str")]),
+             ("'.also[]'", "str")]),
     ("out", [("→ ", "arrow"), ("supabase", "key"), (" · ", "sep"),
              ("postgres", "val"), (" · ", "sep"), ("redux", "val"),
              (" · ", "sep"), ("tailwind", "val"), (" · ", "sep"),
-             ("docker", "val"), (" · ", "sep"), ("rag", "key")]),
+             ("docker", "val"), (" · ", "sep"), ("redis", "key")]),
     ("blank", []),
-    ("cmd", [("$ ", "prompt"), ("pnpm ", "cmd"), ("test:all", "flag")]),
-    ("checks", [("2,282", "tests green"), ("48", "ADRs on record"),
-                ("spec", "before code")]),
+    ("cmd", [("$ ", "prompt"), ("pnpm ", "cmd"), ("test", "flag")]),
+    ("checks", [("2,282", "tests passing"), ("6", "years shipping"),
+                ("0", "broken Fridays")]),
     ("blank", []),
     ("prompt", [("$ ", "prompt")]),
 ]
@@ -80,11 +79,11 @@ PAUSE_AFTER_OUT = 0.36
 CHECK_STAGGER = 0.40
 TAIL = 0.5
 
-ALT = ("Terminal window. whoami returns: Arthur Cavini, full-stack, MERN, "
-       "NestJS, Next.js, Brazil. The core stack is react, node, nestjs, "
-       "next.js, typescript and mongodb. Alongside those: supabase, postgres, "
-       "redux, tailwind, docker and rag. pnpm test:all passes with 2,282 "
-       "tests green, 48 ADRs on record, spec before code.")
+ALT = ("Terminal window. whoami returns: Arthur Cavini, full-stack dev, "
+       "MERN plus NestJS, Brazil. Core stack: react, node, nestjs, next.js, "
+       "typescript, mongodb. Also: supabase, postgres, redux, tailwind, "
+       "docker, redis. pnpm test passes: 2,282 tests passing, 6 years "
+       "shipping, 0 broken Fridays.")
 
 
 def esc(s):
@@ -216,7 +215,7 @@ def build(theme, static=False):
     lights = "".join(
         f'<circle cx="{26 + k * 20}" cy="{BAR // 2}" r="6" fill="{col}"/>'
         for k, col in enumerate(("#FF5F57", "#FEBC2E", "#28C840")))
-    title = (f'<tspan>~/arthur-cavini</tspan><tspan fill="{c["sep"]}"> — </tspan>'
+    title = (f'<tspan>~/arthur-cavini</tspan><tspan fill="{c["sep"]}"> · </tspan>'
              f'<tspan>zsh</tspan>')
     nl = chr(10)
 
