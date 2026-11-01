@@ -2,7 +2,7 @@
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/terminal-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="assets/terminal-light.svg">
-    <img width="100%" src="assets/terminal-dark.svg" alt="Terminal window. whoami returns: Arthur Cavini, full-stack dev, React, Node, NestJS. Core stack: react, node, nestjs, next.js, typescript, postgres. AI: rag, llm, pgvector, hybrid-search, agents, whisper. pnpm test passes: 2,282 tests passing, 6 years shipping, TDD plus spec-driven.">
+    <img width="100%" src="assets/terminal-dark.svg" alt="Terminal window. whoami returns: Arthur Cavini, full-stack dev, React, Node, NestJS. Core stack: react, node, nestjs, next.js, typescript, postgres. AI: rag, llm, pgvector, hybrid-search, agents, whisper. pnpm test passes: 2,282 tests passing, 7 years shipping, TDD plus spec-driven.">
   </picture>
 </p>
 
@@ -20,7 +20,8 @@
 
 ## Hey, I'm Arthur 👋
 
-Full-stack developer from Brazil, writing **React** and **Node** since 2020.
+Full-stack developer from Brazil. I've been writing HTML, CSS and
+JavaScript for 10 years, and building with **React** and **Node** since 2019.
 
 React and **Next.js** on the front, Node behind it. When a project gets big
 enough that one Express app stops making sense, I switch to **NestJS**. Most of

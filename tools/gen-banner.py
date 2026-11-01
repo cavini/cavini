@@ -67,7 +67,7 @@ LINES = [
              ("agents", "val"), (" · ", "sep"), ("whisper", "key")]),
     ("blank", []),
     ("cmd", [("$ ", "prompt"), ("pnpm ", "cmd"), ("test", "flag")]),
-    ("checks", [("2,282", "tests passing"), ("6", "years shipping"),
+    ("checks", [("2,282", "tests passing"), ("7", "years shipping"),
                 ("TDD", "+ spec-driven")]),
     ("blank", []),
     ("prompt", [("$ ", "prompt")]),
@@ -82,7 +82,7 @@ TAIL = 0.5
 ALT = ("Terminal window. whoami returns: Arthur Cavini, full-stack dev, "
        "React, Node, NestJS. Core stack: react, node, nestjs, next.js, "
        "typescript, postgres. AI: rag, llm, pgvector, hybrid-search, agents, "
-       "whisper. pnpm test passes: 2,282 tests passing, 6 years shipping, "
+       "whisper. pnpm test passes: 2,282 tests passing, 7 years shipping, "
        "TDD plus spec-driven.")
 
 
