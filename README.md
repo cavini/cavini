@@ -185,7 +185,7 @@ clean architecture with 100% coverage on the domain layer. 693 tests.
 </p>
 
 <a href="https://overtone-five.vercel.app">
-  <img alt="Overtone totalling a series: 56 episodes, 70 hours analysed, 328,042 words said, above a table of the words said most across the whole run with the number of episodes each appeared in" src="assets/overtone.png" width="620">
+  <img alt="Overtone with the interface in English: an upload card for the next episode, then the series totalled so far at 56 episodes, 70 hours analysed and 328,042 words said, above a table of the words said most across the whole run with the number of episodes each appeared in" src="assets/overtone.png" width="620">
 </a>
 
 Analytics for a podcast some friends of mine record. Upload an episode and find
