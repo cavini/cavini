@@ -153,6 +153,10 @@ milestone, so Claude Code and Cursor can query it straight from the editor.
   <img alt="693 tests" src="https://img.shields.io/badge/693_tests-0D9488?style=flat-square&logo=vitest&logoColor=white">
 </p>
 
+<a href="https://precinho-theta.vercel.app">
+  <img alt="Precinho: ten supermarket chains selected as filters, a product search box, and savings cards showing the same item priced across four chains, cheapest first" src="assets/precinho.png" width="620">
+</a>
+
 Grocery prices in Brazil change depending on which branch serves your address,
 so this one asks for your postcode before it shows you anything. Same barcode,
 same week, two São Paulo chains: Coke was R$ 14,98 at one and R$ 10,49 at the
