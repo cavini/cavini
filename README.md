@@ -184,10 +184,6 @@ clean architecture with 100% coverage on the domain layer. 693 tests.
   <img alt="1,589 tests" src="https://img.shields.io/badge/1%2C589_tests-0D9488?style=flat-square&logo=vitest&logoColor=white">
 </p>
 
-<a href="https://overtone-five.vercel.app">
-  <img alt="Overtone: an uploaded episode analysed into duration, word count, distinct terms and words per minute, above a table of the most spoken words with every inflected form that counted toward each" src="assets/overtone.png" width="560">
-</a>
-
 Analytics for a podcast some friends of mine record. Upload an episode and find
 out how many times a word came up across the whole series, with a timestamp you
 can click to hear it. Portuguese and English.
