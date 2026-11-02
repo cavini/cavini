@@ -188,8 +188,8 @@ clean architecture with 100% coverage on the domain layer. 693 tests.
   <img alt="Overtone: an uploaded episode analysed into duration, word count, distinct terms and words per minute, above a table of the most spoken words with every inflected form that counted toward each" src="assets/overtone.png" width="560">
 </a>
 
-Analytics for the podcast I record with friends. Upload an episode and find out
-how many times you've said a word across the whole series, with a timestamp you
+Analytics for a podcast some friends of mine record. Upload an episode and find
+out how many times a word came up across the whole series, with a timestamp you
 can click to hear it. Portuguese and English.
 
 Transcription runs on **Whisper large-v3-turbo** at roughly 160x realtime, which
