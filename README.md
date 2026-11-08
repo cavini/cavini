@@ -2,7 +2,7 @@
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/terminal-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="assets/terminal-light.svg">
-    <img width="100%" src="assets/terminal-dark.svg" alt="Terminal window. whoami returns: Arthur Cavini, full-stack dev, React, Node, NestJS. Core stack: react, node, nestjs, next.js, typescript, postgres. AI: rag, llm, pgvector, hybrid-search, agents, whisper. pnpm test passes: 2,314 tests passing, 7 years shipping, TDD plus spec-driven.">
+    <img width="100%" src="assets/terminal-dark.svg" alt="Terminal window. whoami returns: Arthur Cavini, full-stack dev, React, Node, NestJS. Core stack: react, node, nestjs, next.js, typescript, postgres. AI: rag, llm, pgvector, hybrid-search, agents, whisper. pnpm test passes: 2,355 tests passing, 7 years shipping, TDD plus spec-driven.">
   </picture>
 </p>
 
@@ -190,26 +190,49 @@ clean architecture with 100% coverage on the domain layer. 725 tests.
   <img alt="Next.js" src="https://img.shields.io/badge/Next.js-0070F3?style=flat-square&logo=nextdotjs&logoColor=white">
   <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white">
   <img alt="Supabase" src="https://img.shields.io/badge/Supabase-3FCF8E?style=flat-square&logo=supabase&logoColor=black">
-  <img alt="1,589 tests" src="https://img.shields.io/badge/1%2C589_tests-0D9488?style=flat-square&logo=vitest&logoColor=white">
+  <img alt="1,630 tests" src="https://img.shields.io/badge/1%2C630_tests-0D9488?style=flat-square&logo=vitest&logoColor=white">
 </p>
 
 <a href="https://overtone-five.vercel.app">
   <img alt="Overtone with the interface in English: an upload card for the next episode, then the series totalled so far at 56 episodes, 70 hours analysed and 328,042 words said, above a table of the words said most across the whole run with the number of episodes each appeared in" src="assets/overtone-en.png" width="620">
 </a>
 
-Analytics for a podcast some friends of mine record. Upload an episode and find
-out how many times a word came up across the whole series, with a timestamp you
-can click to hear it. Portuguese and English.
+<video src="https://github.com/user-attachments/assets/772ab0b5-dbdf-45b7-8b06-f5bf01a32c59" controls muted playsinline></video>
 
-Transcription runs on **Whisper large-v3-turbo** at roughly 160x realtime, which
-is fast enough that an episode comes back inside a normal web request, so there
-is no queue and no worker to keep alive. Getting a two hour episode past a
-4.5 MB serverless upload limit was the fun part: the browser decodes the audio,
-splits it where there's silence rather than mid-word, and uploads each piece
-straight to storage.
+Silent screen capture: an episode going in, and the counts coming out.
+**[Live app](https://overtone-five.vercel.app)** (sign-in is invitation-only) ·
+**[Source](https://github.com/cavini/overtone)**
+
+Podcast analytics that turn an episode into countable, citable facts. Upload
+the finished file and find out which words a show cannot stop saying, how often
+each running joke actually came up, and how all of it moves across the whole
+series — with a timestamp behind every single number, so any count can be
+clicked and heard. Counting is deterministic SQL, never a language model, which
+is what makes the numbers worth arguing about.
+
+Transcription runs on **Whisper large-v3** — the full model rather than the
+distilled one, because on a real ninety-second slice of this show the turbo
+model rendered a plain, very common sentence as something nobody said, and the
+entire output of this product is counts of words. It is still fast enough that
+a ten-minute chunk comes back in a couple of seconds, which is what lets the
+work happen inside a normal web request with no queue and no worker to keep
+alive. What paces a full episode is the free allowance instead, spent in
+seconds of audio rather than requests.
+
+Getting a two hour episode past a 4.5 MB serverless upload limit was the fun
+part: the browser decodes the audio, splits it where there's silence rather
+than mid-word, and uploads each piece straight to storage.
+
+Each episode's language is worked out from the audio rather than declared —
+three half-minute windows sampled from the middle of the recording, majority
+wins. Never the opening, because the show starts on music with English lyrics,
+so anything listening to the first thirty seconds calls every episode English.
+Portuguese and English each get their own stop words, stemmer and dictionary,
+so a language there is no pack for is refused by name instead of counted as
+Portuguese and reported as if it were right.
 
 It's live, and it costs nothing to run. Vercel, Supabase and a free
-transcription tier, no credit card anywhere. 1,589 tests.
+transcription tier, no credit card anywhere. 1,630 tests.
 
 <br>
 
@@ -217,7 +240,7 @@ transcription tier, no credit card anywhere. 1,589 tests.
 
 Specs and tests come before the code, and I write down why I made a decision,
 because the person who has to understand it in six months is usually me. Across
-these three projects that's **2,314 tests**, **48 architecture decision
+these three projects that's **2,355 tests**, **49 architecture decision
 records**, and a README on each one that says plainly what's finished and what
 isn't.
 
