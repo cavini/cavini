@@ -2,7 +2,7 @@
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/terminal-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="assets/terminal-light.svg">
-    <img width="100%" src="assets/terminal-dark.svg" alt="Terminal window. whoami returns: Arthur Cavini, full-stack dev, React, Node, NestJS. Core stack: react, node, nestjs, next.js, typescript, postgres. AI: rag, llm, pgvector, hybrid-search, agents, whisper. pnpm test passes: 2,314 tests passing, 7 years shipping, TDD plus spec-driven.">
+    <img width="100%" src="assets/terminal-dark.svg" alt="Terminal window. whoami returns: Arthur Cavini, full-stack dev, React, Node, NestJS. Core stack: react, node, nestjs, next.js, typescript, postgres. AI: rag, llm, pgvector, hybrid-search, agents, whisper. pnpm test passes: 2,355 tests passing, 7 years shipping, TDD plus spec-driven.">
   </picture>
 </p>
 
