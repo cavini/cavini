@@ -2,7 +2,7 @@
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/terminal-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="assets/terminal-light.svg">
-    <img width="100%" src="assets/terminal-dark.svg" alt="Terminal window. whoami returns: Arthur Cavini, full-stack dev, React, Node, NestJS. Core stack: react, node, nestjs, next.js, typescript, postgres. AI: rag, llm, pgvector, hybrid-search, agents, whisper. pnpm test passes: 2,282 tests passing, 7 years shipping, TDD plus spec-driven.">
+    <img width="100%" src="assets/terminal-dark.svg" alt="Terminal window. whoami returns: Arthur Cavini, full-stack dev, React, Node, NestJS. Core stack: react, node, nestjs, next.js, typescript, postgres. AI: rag, llm, pgvector, hybrid-search, agents, whisper. pnpm test passes: 2,314 tests passing, 7 years shipping, TDD plus spec-driven.">
   </picture>
 </p>
 
@@ -150,17 +150,18 @@ milestone, so Claude Code and Cursor can query it straight from the editor.
   <img alt="Next.js 16" src="https://img.shields.io/badge/Next.js_16-0070F3?style=flat-square&logo=nextdotjs&logoColor=white">
   <img alt="React 19" src="https://img.shields.io/badge/React_19-61DAFB?style=flat-square&logo=react&logoColor=black">
   <img alt="Supabase" src="https://img.shields.io/badge/Supabase-3FCF8E?style=flat-square&logo=supabase&logoColor=black">
-  <img alt="693 tests" src="https://img.shields.io/badge/693_tests-0D9488?style=flat-square&logo=vitest&logoColor=white">
+  <img alt="725 tests" src="https://img.shields.io/badge/725_tests-0D9488?style=flat-square&logo=vitest&logoColor=white">
 </p>
 
-<a href="https://precinho-theta.vercel.app">
-  <img alt="Precinho: ten supermarket chains selected as filters, a product search box, and savings cards showing the same item priced across four chains, cheapest first" src="assets/precinho.png" width="620">
-</a>
+https://github.com/user-attachments/assets/44c99e38-6b02-4c74-9954-76608aae547a
 
-Grocery prices in Brazil change depending on which branch serves your address,
-so this one asks for your postcode before it shows you anything. Same barcode,
-same week, two São Paulo chains: Coke was R$ 14,98 at one and R$ 10,49 at the
-other. That 30% gap is the whole reason it exists.
+<sub><a href="https://precinho-theta.vercel.app">Try it</a> · <a href="assets/precinho.png">screenshot</a></sub>
+
+Grocery prices in Brazil change depending on which branch serves your address.
+Same barcode, same week, two São Paulo chains: Coke was R$ 14,98 at one and
+R$ 10,49 at the other. That 30% gap is the whole reason it exists. It used to
+ask for your postcode; it covers one town now and says so on screen, because a
+second region would not fit in the 500 MB the free tier allows.
 
 Matching the same product across chains is the hard part, and where the AI
 comes in. Barcodes handle most of it, but when a chain doesn't publish one I
@@ -170,8 +171,16 @@ word but one, and that word is the product, so the prompt is written against
 the pairs a similarity score got wrong and the judge is told to answer `false`
 whenever it isn't sure.
 
+40,435 pairs went through that in one run, through the Message Batches API at
+half price. 11,686 came back *same* — and merging them taught the sharper
+lesson, because verdicts are pairwise and groups are transitive. A group of 17
+held three different coffee lines; every link in the chain read as defensible
+alone. The negatives are what break it: a group is refused when any pair
+inside it was judged *different*.
+
+Portuguese or English, routed so each language is its own indexable URL.
 Next.js 16 and React 19 on Supabase, nightly collector in GitHub Actions,
-clean architecture with 100% coverage on the domain layer. 693 tests.
+clean architecture with 100% coverage on the domain layer. 725 tests.
 
 ### [overtone](https://github.com/cavini/overtone)
 
@@ -208,7 +217,7 @@ transcription tier, no credit card anywhere. 1,589 tests.
 
 Specs and tests come before the code, and I write down why I made a decision,
 because the person who has to understand it in six months is usually me. Across
-these three projects that's **2,282 tests**, **48 architecture decision
+these three projects that's **2,314 tests**, **48 architecture decision
 records**, and a README on each one that says plainly what's finished and what
 isn't.
 
