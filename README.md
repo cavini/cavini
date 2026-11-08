@@ -193,15 +193,9 @@ clean architecture with 100% coverage on the domain layer. 725 tests.
   <img alt="1,630 tests" src="https://img.shields.io/badge/1%2C630_tests-0D9488?style=flat-square&logo=vitest&logoColor=white">
 </p>
 
-<a href="https://overtone-five.vercel.app">
-  <img alt="Overtone with the interface in English: an upload card for the next episode, then the series totalled so far at 56 episodes, 70 hours analysed and 328,042 words said, above a table of the words said most across the whole run with the number of episodes each appeared in" src="assets/overtone-en.png" width="620">
-</a>
+https://github.com/user-attachments/assets/772ab0b5-dbdf-45b7-8b06-f5bf01a32c59
 
-<video src="https://github.com/user-attachments/assets/772ab0b5-dbdf-45b7-8b06-f5bf01a32c59" controls muted playsinline></video>
-
-Silent screen capture: an episode going in, and the counts coming out.
-**[Live app](https://overtone-five.vercel.app)** (sign-in is invitation-only) ·
-**[Source](https://github.com/cavini/overtone)**
+<sub><a href="https://overtone-five.vercel.app">Try it</a> · <a href="assets/overtone-en.png">screenshot</a></sub>
 
 Podcast analytics that turn an episode into countable, citable facts. Upload
 the finished file and find out which words a show cannot stop saying, how often
